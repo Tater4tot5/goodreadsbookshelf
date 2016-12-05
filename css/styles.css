@@ -1,0 +1,300 @@
+nav {
+  height: 60px;
+  background-color: #c4df9b;
+  margin:0px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color:black;
+  padding: 10px;
+}
+
+
+.dropdown {
+  position:relative;
+  display: inline-block;
+}
+
+.dropnav {
+  position:absolute;
+  display: none;
+}
+
+.dropnav li {
+  width:130px;
+  margin: 10px;
+}
+.dropnav li a {
+ background-color: none;
+}
+.dropnav li a:hover {
+ background-color: none;
+
+}
+.dropdown:hover .dropnav {
+  display: inline-block;
+  text-align: left;
+
+}
+
+.logo {
+  float: left;
+  margin: 0px 10px;
+}
+
+.navleft {
+  float:left;
+  top:25px;
+  left: 20px;
+  margin: 20px;
+}
+
+.navleft li{
+  margin-left: 10px;
+}
+
+a:hover {
+  color:grey;
+  }
+
+.navright {
+  float:right;
+  position: relative;
+  top:15px;
+  right: 50px;
+  padding-right: 10px;
+}
+
+.navright img {
+  border-radius: 20px;
+}
+
+.sidenav {
+float: left;
+position: fixed;
+margin: 10px 0px;}
+
+.sidenav li {
+  display:block;
+}
+
+.sidenav h4 {
+  padding:10px 0px;}
+
+.sidenav a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color:darkgrey;
+}
+
+.sidenav a:hover {
+  color:black;
+}
+
+.SectionContainer {display: block;
+margin-left: 150px;}
+
+
+h1 {
+margin:0px;
+text-align: center;
+font-family: mrs-eaves, serif;
+font-size: 50px;
+color: black;
+padding: 50px;
+}
+
+h2 {
+margin:0px;
+text-align: left;
+font-family: mrs-eaves, serif;
+font-variant: small-caps;
+font-weight: lighter;
+font-size: 30px;
+color: black;
+padding: 20px;
+}
+
+h3 {
+  color:#4D4D4D;
+  font-family:mrs-eaves, serif;
+  font-size: 24px;
+  font-variant-caps: petite-caps;
+  margin:0px;
+}
+
+h4 {
+  color:#4D4D4D;
+  font-family:mrs-eaves, serif;
+  font-size: 20px;
+  font-variant-caps: petite-caps;
+  margin: 0px;
+}
+
+h5 {
+  color:black;
+  font-family:mrs-eaves, serif;
+  font-size: 16px;
+  margin: 0px;
+}
+
+p {font-family: mrs-eaves;
+font-style: normal;}
+
+i {margin: 0px 10px;}
+
+.recent {
+  color: #6BA6BF;
+}
+
+.fave {
+  color: #996D4E;
+}
+
+.toread {
+  color: #74397C;
+
+}
+
+.bookimg img{
+  height: 100px;
+  display: inline;
+}
+.booktext img{
+  height:20px;
+  padding:10px;
+}
+
+.bookinfocontainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.bookgrp {
+  margin: 20px 20px;
+}
+
+a .viewmorelink { display: block;
+text-align: right;}
+
+.viewmorelink:hover {
+  color:  #c4df9b;
+}
+
+.lastbookgrp i{
+  padding: 50px 0px 30px;
+  font-size: 60px;
+  color: #c4df9b;
+}
+
+h6 {
+  font-family: mrs-eaves, serif;
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0px;
+  display: inline-block;
+  padding: 10px 20px;
+}
+.navfoot {
+  display: inline;
+  top:25px;
+  left: 20px;
+}
+
+
+a:hover {
+  color:grey;
+  }
+
+@media (min-width:761px) and (max-width:2000px)
+  {
+  .logo {
+    height:30px;
+    width:130px;
+    padding: 10px;}
+  }
+@media (min-width:480px) and (max-width:760px) {
+.logo {
+  height:30px;
+  padding: 10px;}
+a {
+  font-size:.75em;
+}
+.navright {
+  display: none;
+}
+
+.recent {
+font-size: 1.5em;}
+
+.fave {
+  font-size: : 1.5em;;
+}
+
+.toread {
+  font-size: 1.5em;;
+
+}
+}
+
+@media (min-width:320px) and (max-width:479px) {
+
+.logo {
+  height:20px;
+  position: relative;
+  top:10px;
+  margin: 0px 0px 0px 10px;}
+
+a {
+  font-size:.5em;
+}
+
+h3 {
+  color:#4D4D4D;
+  font-family:mrs-eaves, serif;
+  font-size: 20px;
+  font-variant-caps: petite-caps;
+  margin:0px;
+  padding: 0px;
+}
+
+h4 {
+  color:#4D4D4D;
+  font-family:mrs-eaves, serif;
+  font-size: 14px;
+  font-variant-caps: petite-caps;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navright {
+  display: none;
+}
+.navfoot {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-left: 50px;
+}
+
+}
