@@ -5,7 +5,9 @@ nav {
 }
 
 ul {
+  padding:0px;
   margin: 0px;
+  list-style: none;
 }
 
 li {
@@ -24,7 +26,6 @@ a {
 
 .dropdown {
   position:relative;
-  display: inline-block;
 }
 
 .dropnav {
@@ -34,19 +35,17 @@ a {
 
 .dropnav li {
   width:130px;
-  margin: 10px;
+  margin: 0px;
+  background-color: lightgrey;
+  padding:5px;
 }
-.dropnav li a {
- background-color: none;
-}
+
 .dropnav li a:hover {
- background-color: none;
+ color:  #6BA6BF;
 
 }
 .dropdown:hover .dropnav {
-  display: inline-block;
-  text-align: left;
-
+  display: block;
 }
 
 .logo {
@@ -61,7 +60,7 @@ a {
   margin: 20px;
 }
 
-.navleft li{
+li .navleft {
   margin-left: 10px;
 }
 
@@ -71,27 +70,30 @@ a:hover {
 
 .navright {
   float:right;
-  position: relative;
-  top:15px;
-  right: 50px;
-  padding-right: 10px;
+  width: 25%
+  padding: 10px;
+  margin-top: 15px;
 }
 
 .navright img {
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
+.sidenavmobile {
+  display: none;
+}
 .sidenav {
+
 float: left;
 position: fixed;
-margin: 10px 0px;}
+margin: 10px;}
 
 .sidenav li {
   display:block;
 }
 
 .sidenav h4 {
-  padding:10px 0px;}
+  padding:10px 0px 0px;}
 
 .sidenav a {
   text-decoration: none;
@@ -106,7 +108,8 @@ margin: 10px 0px;}
 }
 
 .SectionContainer {display: block;
-margin-left: 150px;}
+margin-left: 150px;
+clear:both;}
 
 
 h1 {
@@ -215,11 +218,19 @@ h6 {
   display: inline-block;
   padding: 10px 20px;
 }
-.navfoot {
-  display: inline;
-  top:25px;
-  left: 20px;
+
+footer {
+  text-align: center;
 }
+.navfoot ul{
+  float: right;
+  display: inline-block;
+  width: 75%;
+  margin-top: 10px;
+}
+footer h6 {
+  float: left;
+  width: 25%;}
 
 
 a:hover {
@@ -237,8 +248,14 @@ a:hover {
 .logo {
   height:30px;
   padding: 10px;}
+
+.navleft {
+  width: 50%;
+  float: right;
+}
+
 a {
-  font-size:.75em;
+  font-size:.5em;
 }
 .navright {
   display: none;
@@ -248,13 +265,12 @@ a {
 font-size: 1.5em;}
 
 .fave {
-  font-size: : 1.5em;;
+  font-size: 1.5em;;
 }
 
 .toread {
-  font-size: 1.5em;;
+  font-size: 1.5em;}
 
-}
 }
 
 @media (min-width:320px) and (max-width:479px) {
@@ -290,11 +306,34 @@ h4 {
 .navright {
   display: none;
 }
-.navfoot {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  margin-left: 50px;
+
+.recent {
+font-size: 1.5em;}
+
+.fave {
+  font-size: 1.5em;;
 }
 
+.toread {
+  font-size: 1.5em;}
+
+}
+
+}
+
+@media (max-width:319px)
+{ .sidenav {
+  display:inline-block;
+}
+.recent {
+font-size: 1.5em;}
+
+.fave {
+  font-size: 1.5em;;
+}
+
+.toread {
+  font-size: 1.5em;}
+
+}
 }
