@@ -107,10 +107,6 @@ margin: 10px;}
   color:black;
 }
 
-.SectionContainer {display: block;
-margin-left: 150px;
-clear:both;}
-
 
 h1 {
 margin:0px;
@@ -170,16 +166,60 @@ i {margin: 0px 10px;}
 
 .toread {
   color: #74397C;
+}
+
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
 
 }
 
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:1.5em; /* Change the size of the stars */
+  color:#ccc;
+  margin: 5px 0px;
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
+
+.SectionContainer {display: block;
+margin-left: 150px;
+clear:both;}
+
+.bookgrp {
+  text-align: left;
+  width: 30%;
+  }
+
 .bookimg img{
-  height: 100px;
-  display: inline;
+  max-height: 130px;
+  padding-top: 10px;
+  padding-right: 10px;
+  float:left;
+  margin: 0px;
 }
 .booktext img{
   height:20px;
-  padding:10px;
+  margin: 0px;
+  clear:both;
+}
+.booktext p{
+margin: 10px;
 }
 
 .bookinfocontainer {
@@ -194,7 +234,8 @@ i {margin: 0px 10px;}
 }
 
 .bookgrp {
-  margin: 20px 20px;
+  margin: 10px 10px;
+  display: block;
 }
 
 a .viewmorelink { display: block;
@@ -219,8 +260,9 @@ h6 {
   padding: 10px 20px;
 }
 
-footer {
+footer nav{
   text-align: center;
+  padding: 20px 10px 0px;
 }
 .navfoot ul{
   float: right;
@@ -275,6 +317,10 @@ font-size: 1.5em;}
 
 @media (min-width:320px) and (max-width:479px) {
 
+.bookgrp {
+    text-align: left;
+    width: 70%;
+  float: left;}
 .logo {
   height:20px;
   position: relative;
@@ -316,8 +362,6 @@ font-size: 1.5em;}
 
 .toread {
   font-size: 1.5em;}
-
-}
 
 }
 
